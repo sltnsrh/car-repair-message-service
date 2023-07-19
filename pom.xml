@@ -8,7 +8,7 @@
 		<version>3.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.salatin.message</groupId>
+	<groupId>com.salatin</groupId>
 	<artifactId>message-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>message-service</name>
