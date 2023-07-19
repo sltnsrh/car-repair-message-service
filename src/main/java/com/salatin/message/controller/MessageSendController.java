@@ -1,6 +1,6 @@
 package com.salatin.message.controller;
 
-import com.salatin.message.model.dto.LogMessage;
+import com.salatin.message.model.LogMessage;
 import com.salatin.message.service.OrderLogMessageProducer;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

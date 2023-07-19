@@ -1,6 +1,6 @@
 package com.salatin.message.service;
 
-import com.salatin.message.model.dto.LogMessage;
+import com.salatin.message.model.LogMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;

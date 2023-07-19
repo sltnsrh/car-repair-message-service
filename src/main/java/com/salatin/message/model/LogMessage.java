@@ -1,4 +1,4 @@
-package com.salatin.message.model.dto;
+package com.salatin.message.model;
 
 import java.time.LocalDateTime;
 import lombok.Data;

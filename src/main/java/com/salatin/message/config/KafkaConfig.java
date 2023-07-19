@@ -1,6 +1,6 @@
 package com.salatin.message.config;
 
-import com.salatin.message.model.dto.LogMessage;
+import com.salatin.message.model.LogMessage;
 import java.util.Map;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -25,6 +25,7 @@ public class KafkaConfig {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServer);
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        props.put(JsonSerializer.TYPE_MAPPINGS, "message:com.salatin.message.model.LogMessage");
 
         return new ReactiveKafkaProducerTemplate<>(SenderOptions.create(props));
     }
